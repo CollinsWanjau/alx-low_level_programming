@@ -1,1 +1,1 @@
-1.Script that runs a C file through the preprocessor and save the result into another file
+program will assign a random number to the variable n each time it is executed
