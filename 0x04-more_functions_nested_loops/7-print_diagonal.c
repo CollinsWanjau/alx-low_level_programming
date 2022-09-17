@@ -6,6 +6,7 @@
  * Return: returns nothing
  */
 void print_diagonal(int n)
+{
 	int len, space;
 
 	if (n > 0)
@@ -24,4 +25,5 @@ void print_diagonal(int n)
 		}
 		putchar('\n');
 	}
+}
 }
