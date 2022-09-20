@@ -20,7 +20,7 @@ void puts_half(char *str)
  * @s: string
  *
  * Description: returns the full string
- * return: the length of the given string
+ * return: always 0(Success)
  */
 int _strlen(char *s)
 {
@@ -28,5 +28,5 @@ int _strlen(char *s)
 
 	while (*(s + len) != '\0')
 		len++;
-	return(len);
+	return (len);
 }
