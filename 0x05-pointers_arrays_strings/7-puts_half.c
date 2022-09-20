@@ -19,8 +19,8 @@ void puts_half(char *str)
  * _strlen - returns the length of a string
  * @s: string
  *
- * Description: returns the full string
- * return: always 0(Success)
+ * Description: returns the lenth of a string
+ * Return: always 0(Success)
  */
 int _strlen(char *s)
 {
