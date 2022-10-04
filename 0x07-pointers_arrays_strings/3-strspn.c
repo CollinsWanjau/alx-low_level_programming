@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	/* return 0 if any one is NULL */
 	if ((s == NULL) || (accept == NULL))
-		return len;
+		return (len);
 	/**
 	 * return s position if found in accept
 	 * if not return NULL
@@ -25,5 +25,5 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		len++;
 	}
-	return len;
+	return (len);
 }
