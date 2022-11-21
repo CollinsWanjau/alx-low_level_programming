@@ -27,7 +27,7 @@ int _strlen(char *s)
  *
  * Return: POinter to dest
  */
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int inc = 0;
 
@@ -38,7 +38,7 @@ char _strcpy(char *dest, char *src)
 	}
 	*(dest + inc) = '\0';
 
-	return (*dest);
+	return (dest);
 }
 
 /**
@@ -64,12 +64,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->name = malloc(sizeof(dog_t) * (len1 + 1));
 	if (dog->name == NULL)
 	{
+		free(dog);
 		return (NULL);
 	}
 
 	dog->owner = malloc(sizeof(dog_t) * (len2 + 1));
 	if (dog->owner == NULL)
 	{
+		free(dog);
+		free(dog->name);
 		return (NULL);
 	}
 
