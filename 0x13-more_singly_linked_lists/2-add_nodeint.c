@@ -14,7 +14,7 @@ listint_t *new;
  * starts allocating memory for the new node using malloc
  */
 new = malloc(sizeof(listint_t));
-if (head == NULL)
+if (new == NULL)
 {
 return NULL;    
 }
