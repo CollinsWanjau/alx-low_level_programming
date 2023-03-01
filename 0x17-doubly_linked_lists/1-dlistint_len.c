@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * dlistint_len - a function that returns length
+ * @h: head of the list
+ *
+ * Return: Length of the list
+ */
 size_t dlistint_len(const dlistint_t *h)
 {
 const dlistint_t *head;
@@ -18,5 +24,5 @@ while (head != 0)
 head = head->next;
 i++;
 }
-return (i); 
+return (i);
 }
