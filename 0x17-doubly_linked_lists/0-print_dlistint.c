@@ -9,21 +9,23 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
+const dlistint_t *head;
 int i;
-i = 0;
-if (h == NULL)
+head = h;
+if (!head)
 {
-printf("Can't allocate");
+return (0);
 }
-while (h->prev != NULL)
+while (head->prev != NULL)
 {
-h = h->prev;
+head = head->prev;
+printf("%d\n", head->n);
 }
-while (h != NULL)
+while (head != NULL)
 {
-printf("%d\n", h->n);
+printf("%d\n", head->n);
+head = head->next;
 i++;
-h = h->next;
 }
 return (i);
 }
