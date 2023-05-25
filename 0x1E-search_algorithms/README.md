@@ -89,3 +89,24 @@ does not depend on the size of the input array.
 
 * Hence the binary search algo has a constant space complexity,
 regardless of the size of the input array.
+
+#### 9. Interpolation search
+
+Write a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
+
+* Prototype : int interpolation_search(int array, size_t size, int value);
+
+[solution](102-interpolation.c)
+* Interpolation search is an algorithm for searching for a key in an array
+that has been ordered by numerical values assigned to the keys.
+
+* Interpolation search resembles the method by which people search a telephone
+dir for a name(the key value by which the book's entries are orderd): in
+each step the algorithm calculates where in the remaining search space the
+sought item might be, based on the key values at the bounds of the search
+space and the value of the sought key, usually via a linear interpolation.
+
+* The key value actually found at this estimated position is then compared
+to the key value being sought.If it not equal, then depanding on the
+comparison, the remaining search space is reduced to the part before or
+after the estimated position.
